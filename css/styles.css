@@ -10,9 +10,10 @@
   background-image: url("../assets/mountain.jpg");
 }
 
-.ray-pic{
+.profile-pic{
   border-radius: 100%;
-  width: 90%;
+  width: 75%;
+  border: 8px solid #e3fdfd;
 }
 
 .navbar {
@@ -21,6 +22,14 @@
 
 .nav-item {
   font-size: 1.2rem;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #fff;
 }
 
 
@@ -39,10 +48,10 @@
 
 /* About Me! */
 #about-me{
-  padding: 5%;
+  padding: 7% 5%;
 }
 
-#about-me p{
+.about-txt{
   position:relative;
   top:20%;
   color: black;
@@ -52,12 +61,17 @@
 
 .profile-pic {
      border-radius: 100%;
-     width: 90%;
+     width: 80%;
      margin: 0 2%;
 }
 
-
-
+.about-meet{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  color: #71c9ce;
+  position: relative;
+  top: 20%;
+}
 
 @media (max-width: 1045px) {
   .greeting-txt {
@@ -77,5 +91,22 @@
   .navbar-toggler{
     margin: 1rem auto 0;
     color: #fff;
+  }
+
+  .profile-pic{
+    position: relative;
+    left: 23%;
+    width: 50%;
+  }
+
+  .about-txt, .about-meet{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-txt{
+    width: 80%;
+    margin: auto;
   }
 }
