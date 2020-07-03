@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Yellowtail&display=swap" rel="stylesheet" />
 
   <link rel="icon" href="https://image.flaticon.com/icons/svg/3107/3107941.svg">
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/2676a0c1d2.js" crossorigin="anonymous"></script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -18,7 +20,7 @@
 
 <body>
   <section id="title">
-    <div class="container-fluid bg-img">
+    <div class="container-fluid bg-img contaienr-space">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon custom-toggler"> </span>
@@ -33,10 +35,6 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Work Experience</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
@@ -69,18 +67,64 @@
         <div class = "col-lg-8 about-info">
           <h2 class = "about-meet">Its nice to meet you!</h2>
             <p class = "about-txt">
-              Im glad you landed on my page! I am a rising junior at Virginia Tech studying Computer Science with a track for Machine Learning.
+              Im glad you landed on my page! I am Ray Raya, a rising junior at Virginia Tech studying Computer Science with a track for Machine Learning.
               I am a newbie to the web development world, but I'm constantly fascinated by all the tools and libraries, so expect more to come!
             </p>
         </div>
       </div>
+      <hr>
     </div>
-
   </section>
 
   <section id="hobbies">
+    <div class = "container-fluid hobby-container container-space">
+      <h1> My Hobbies </h1>
+      <div class = "row">
+        <div class = "col-lg-4">
+          <!-- https://www.flaticon.com/authors/freepik icon was made by freepik -->
+          <img class = "hobby-pic" src= "assets/guitar.png" alt="guitar-pic">
+          <p>
+            I love playing the guitar!
+            Just playing Romance Anonimo and Stairway to Heaven calms the nerves.
+             I'm not the best but I try to practice everyday.
+             Biggest struggle at the moment is getting a good ring for barre chords.
+          </p>
+        </div>
 
+        <div class = "col-lg-4">
+          <!-- https://www.flaticon.com/authors/freepik icon was made by freepik -->
+          <img class = "hobby-pic" src="assets/soccer.png" alt="soccer-pic">
+          <p>
+            I absolutely love playing soccer, its an even bigger stress reliever that playing the guitar.
+             Not to mention it keeps me in shape, since I am running around everywhere as a midfielder.
+              Unfortunately, I am not the biggest fan of watching soccer.
+          </p>
+        </div>
+
+        <div class = "col-lg-4">
+          <!-- https://www.flaticon.com/authors/freepik icon was made by freepik -->
+          <img class = "hobby-pic" src="assets/java.png" alt="java-pic">
+          <p>
+            Coding can sometimes be tricky and seem difficult, but I have stuck with it since high school.
+            It brings me a lot of joy when I solve a coding problem and even greater joy when I do it in a couple lines!
+            When I have extra time I try to complete some coding challenges on
+            <a class = "proj-eu" href = "https://projecteuler.net/" > Project Euler </a> .
+
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <footer class = "contact">
+    <div class="container-fluid contact-con">
+    <a target = "_blank" href = "https://www.linkedin.com/in/ray-raya-a07629155"><i class="fab fa-linkedin"></i></a>
+    <a href = "mailto:raymar.raya@gmail.com"><i class="fa-footer fas fa-envelope"></i></a>
+    <a target = "_blank" href = "https://github.com/RayRaya"><i class="fab fa-github-alt"></i></a>
+    <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100012999186967"><i class="fa-footer fab fa-facebook"></i></a>
+    <p class = "copyright">© Copyright 2020 Raymar Raya</p>
+    </div>
+  </footer>
 </body>
 
 </html>

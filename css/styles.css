@@ -1,3 +1,23 @@
+/* General */
+hr {
+  width: 10%;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 1rem;
+  border-color: #71c9ce;
+  margin:10% auto 0;
+}
+
+.container, .container-space{
+  padding: 7% 5% 5%;
+}
+
+p {
+  color: black;
+  line-height: 2;
+  font-family: "Ubuntu", sans-serif;
+}
+
 
 /* Title Section */
 
@@ -47,16 +67,9 @@
 }
 
 /* About Me! */
-#about-me{
-  padding: 7% 5%;
-}
-
 .about-txt{
   position:relative;
   top:20%;
-  color: black;
-  line-height: 2;
-  font-family: "Ubuntu", sans-serif;
 }
 
 .about-info {
@@ -76,6 +89,69 @@
   position: relative;
   top: 20%;
 }
+
+/* Hobbies  */
+.hobby-pic {
+  width: 50%;
+  padding: 3% 3% 8%;
+}
+
+.hobby-container {
+  margin: auto;
+  text-align: center;
+}
+
+.hobby-container h1{
+  font-size: "Ubuntu", sans-serif;
+  font-size: 3rem;
+  color: #71c9ce;
+  padding-bottom: 5%;
+}
+
+.hobby-container p{
+  margin: auto;
+  width: 85%;
+}
+
+.proj-eu, .proj-eu:visited {
+  color: #71c9ce;
+  text-decoration: none;
+}
+
+.proj-eu:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Contact */
+.contact{
+  text-align: center;
+  margin: auto;
+  background-color: #71c9ce;
+}
+
+.contact-con{
+  padding: 2%;
+}
+
+.contact i{
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.contact i, .contact p {
+  color: #fff;
+}
+
+.contact p{
+  margin-bottom: 0;
+}
+
+.contact i:hover{
+  color: #e3fdfd;
+}
+
+
 
 @media (max-width: 1045px) {
   .greeting-txt {
