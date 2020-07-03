@@ -59,6 +59,10 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+.about-info {
+  margin: auto 0;
+}
+
 .profile-pic {
      border-radius: 100%;
      width: 80%;
@@ -93,7 +97,7 @@
     color: #fff;
   }
 
-  .profile-pic{
+  #about-me .carousel-item {
     position: relative;
     left: 23%;
     width: 50%;
