@@ -1,3 +1,16 @@
 .bg-img{
   background-image: url("../assets/portfolio-pic.jpg");
 }
+
+.projects .card {
+  margin: 10%;
+}
+
+.disclaimer{
+  text-align:center;
+  margin: 10% auto 0;
+}
+.disclaimer h1 {
+  font-family: "Cairo", sans-serif;
+  font-size: 2rem;
+}
