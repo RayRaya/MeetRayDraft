@@ -154,6 +154,10 @@ p {
 
 
 @media (max-width: 1045px) {
+  p {
+    font-size: 1.7rem;
+  }
+
   .greeting-txt {
     text-align: center;
   }

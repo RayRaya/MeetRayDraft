@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/resume.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&family=Yellowtail&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Ubuntu:ital,wght@0,400;1,300&family=Yellowtail&display=swap" rel="stylesheet">
 
   <link rel="icon" href="https://image.flaticon.com/icons/svg/3107/3107941.svg">
   <!-- FontAwesome Icons -->
@@ -46,14 +46,72 @@
     </div>
   </section>
 
-  <footer class = "contact">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <embed src="assets/resume.pdf" class="resume-file" alt = "ray-resume"/>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion" id="accordionResume">
+            <div class="card">
+              <div class="card-header" id="courses">
+                <h2 class="mb-0 collapse-txt">
+                  <button class="collapse-links btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseCourses" aria-expanded="true" aria-controls="collapseCourses">
+                    Courses
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseCourses" class="collapse" aria-labelledby="courses" data-parent="#accordionResume">
+                <div class="card-body">
+                  CS 1114
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="workExp">
+                <h2 class="mb-0 collapse-txt">
+                  <button class="collapse-links btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
+                    Work Experience
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseWork" class="collapse" aria-labelledby="workExp" data-parent="#accordionResume">
+                <div class="card-body">
+                  Burritos
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="mySkills">
+                <h2 class="mb-0 collapse-txt">
+                  <button class="collapse-links btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSkills" aria-expanded="false" aria-controls="collapseSkills">
+                    My Skills
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSkills" class="collapse show" aria-labelledby="mySkills" data-parent="#accordionResume">
+                <div class="card-body">
+                  Aha it works!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <footer class="contact">
     <div class="container-fluid contact-con">
-    <a target = "_blank" href = "https://www.linkedin.com/in/ray-raya-a07629155"><i class="fab fa-linkedin"></i></a>
-    <a href = "mailto:raymar.raya@gmail.com"><i class="fa-footer fas fa-envelope"></i></a>
-    <a target = "_blank" href = "https://github.com/RayRaya"><i class="fab fa-github-alt"></i></a>
-    <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100012999186967"><i class="fa-footer fab fa-facebook"></i></a>
-    <p class = "copyright">© Copyright 2020 Raymar Raya</p>
+      <a target="_blank" href="https://www.linkedin.com/in/ray-raya-a07629155"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:raymar.raya@gmail.com"><i class="fa-footer fas fa-envelope"></i></a>
+      <a target="_blank" href="https://github.com/RayRaya"><i class="fab fa-github-alt"></i></a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100012999186967"><i class="fa-footer fab fa-facebook"></i></a>
+      <p class="copyright">© Copyright 2020 Raymar Raya</p>
     </div>
   </footer>
 </body>
+
 </html>
