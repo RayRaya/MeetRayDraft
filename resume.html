@@ -50,7 +50,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <embed src="assets/resume.pdf" class="resume-file" alt = "ray-resume"/>
+          <embed src="assets/resume.pdf" class="resume-file" alt="ray-resume" />
         </div>
         <div class="col-lg-6">
           <div class="accordion" id="accordionResume">
@@ -65,41 +65,130 @@
 
               <div id="collapseCourses" class="collapse" aria-labelledby="courses" data-parent="#accordionResume">
                 <div class="card-body">
-                  CS 1114
+                  <div class="course-body cb">
+                    <h3 class="course-heading">Computer Science Courses</h2>
+                      <ul>
+                        <li class="class-txt">ECE 1004, Introduction to ECE Concepts</li>
+                        <li class="class-txt">CS 1114, Introduction to Software Design</li>
+                        <li class="class-txt">CS 2114, Software Design & Data Structures</li>
+                      </ul>
+                  </div>
+
+                  <div class="course-body cb">
+                    <h3 class="course-heading">Math Courses</h2>
+                      <ul>
+                        <li class="class-txt">MATH 1225, Calculus of a Single Variable</li>
+                        <li class="class-txt">MATH 1226, Calculus of a Single Variable</li>
+                        <li class="class-txt">MATH 2204, Intro Multivariable Calculus</li>
+                        <li class="class-txt">MATH 2534, Intro Discrete Math</li>
+                        <li class="class-txt">MATH 2114, Intro Linear Algebra</li>
+                      </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="workExp">
-                <h2 class="mb-0 collapse-txt">
-                  <button class="collapse-links btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
-                    Work Experience
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseWork" class="collapse" aria-labelledby="workExp" data-parent="#accordionResume">
-                <div class="card-body">
-                  Burritos
+              <div class="card">
+                <div class="card-header" id="workExp">
+                  <h2 class="mb-0 collapse-txt">
+                    <button class="collapse-links btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
+                      Work Experience
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseWork" class="collapse" aria-labelledby="workExp" data-parent="#accordionResume">
+                  <div class="card-body">
+                    <div class="lead-container">
+                      <h3 class="lead-header">Teaching Robotics and Engineering</h3>
+                      <p class="title-header"> President (Present) </p>
+                      <ul>
+                        <li>Responsible for maintaining healthy listserv and creating new content that is digestable and entertaining for members.</li>
+                        <li>Tasked with organizing meetings and finding effective methods of communicating the content.</li>
+                      </ul>
+                    </div>
+                    <div class="lead-container">
+                      <h3 class="lead-header">Developer Student Community</h3>
+                      <p class="title-header"> Core Member (Spring 2019)</p>
+                      <ul>
+                        <li>Worked with many different disciplines to create a product to present at a Google Sponsored Competition.</li>
+                        <li>Tasked with learning new frameworks,and technologies such as Google Firebase, and Selenium.</li>
+                      </ul>
+                    </div>
+                    <div class="lead-container">
+                      <h3 class="lead-header">Martian Subsurface Analysis Team</h3>
+                      <p class="title-header"> Embedded Systems Member (Present)</p>
+                      <ul>
+                        <li>Tasked with researching topics and learning new technologies such as Raspberri Pi's
+                          Socket Programming.</li>
+                        <li>Required to be adaptable to new fields in order to ensure deadline dates.</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="mySkills">
-                <h2 class="mb-0 collapse-txt">
-                  <button class="collapse-links btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSkills" aria-expanded="false" aria-controls="collapseSkills">
-                    My Skills
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseSkills" class="collapse show" aria-labelledby="mySkills" data-parent="#accordionResume">
-                <div class="card-body">
-                  Aha it works!
+              <div class="card">
+                <div class="card-header" id="mySkills">
+                  <h2 class="mb-0 collapse-txt">
+                    <button class="collapse-links btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSkills" aria-expanded="false" aria-controls="collapseSkills">
+                      My Skills
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSkills" class="collapse show" aria-labelledby="mySkills" data-parent="#accordionResume">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class = "row">
+                        <div class = "col-6">
+                          <div class="technologies">
+                            <i class="fab fa-angular pos-center text-secondary"></i>
+                            <div class="progress">
+                              <div class="skill-indicator progress-bar bg-secondary" role="progressbar" style="width: 35%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="technologies">
+                            <i class="fab fa-python pos-center text-danger"></i>
+                            <div class="progress">
+                              <div class="skill-indicator progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="technologies">
+                            <i class="fab fa-css3-alt pos-left text-warning"></i>
+                            <div class="progress">
+
+                              <div class="skill-indicator progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class = "col-6">
+                          <div class="technologies">
+                            <i class="fab fa-js-square pos-center text-success"></i>
+                            <div class="progress">
+                              <div class="skill-indicator progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+
+                          <div class="technologies">
+                            <i class="fab fa-html5 pos-left text-info"></i>
+                            <div class="progress">
+
+                              <div class="skill-indicator progress-bar bg-info " role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+
+                          <div class="technologies">
+                            <i class="fab fa-java pos-left text-primary"></i>
+                            <div class="progress">
+                              <div class="skill-indicator progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
   </section>
 
 

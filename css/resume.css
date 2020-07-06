@@ -16,9 +16,58 @@
     text-decoration: none;
 }
 
+.course-body {
+  line-height: 2;
+  margin: 3% 5%;
+}
 
 .collapse-txt{
   font-family: "Cairo", sans-serif;
   font-weight: 700;
   font-size: 3rem !important;
+}
+
+.course-heading {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+}
+
+.cb ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.progress {
+    width: 50%;
+    margin:auto;
+}
+
+.technologies i {
+    font-size: 3rem;
+    margin: auto;
+    margin-bottom: 8%;
+    text-align: center;
+
+}
+
+.pos-left {
+  position: relative;
+  left: 40%;
+}
+
+.pos-center {
+  position: relative;
+  left: 35%;
+}
+
+.technologies {
+    padding: 7%;
+}
+
+@media (max-width: 1045px){
+  .pos-center {
+    left: 40%;
+  }
 }
