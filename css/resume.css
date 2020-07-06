@@ -1,5 +1,6 @@
-
-
+.container {
+  text-align:center;
+}
 
 .bg-img {
   background-image: url("../assets/resume-pic.jpg");
@@ -41,33 +42,21 @@
 
 .progress {
     width: 50%;
+    text-align: center;
     margin:auto;
+}
+
+.technologies {
+  padding: 7%;
 }
 
 .technologies i {
     font-size: 3rem;
-    margin: auto;
     margin-bottom: 8%;
-    text-align: center;
-
 }
 
-.pos-left {
-  position: relative;
-  left: 40%;
-}
 
-.pos-center {
-  position: relative;
-  left: 35%;
-}
-
-.technologies {
-    padding: 7%;
-}
-
-@media (max-width: 1045px){
-  .pos-center {
-    left: 40%;
-  }
+.text-info {
+  text-align: center;
+  margin:auto;
 }
