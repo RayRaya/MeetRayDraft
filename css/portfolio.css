@@ -14,3 +14,8 @@
   font-family: "Cairo", sans-serif;
   font-size: 2rem;
 }
+
+
+.row a, .row a:hover, .row a:active, .row a:visited{
+  text-decoration: none;
+}
