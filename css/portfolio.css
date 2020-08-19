@@ -6,6 +6,19 @@
   margin: 10%;
 }
 
+.title {
+  text-align: center;
+  margin:auto;
+  width: 50%;
+  border-bottom: #d3d3d3 1px solid;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+}
+
+.card img{
+  border-bottom: #d3d3d3 1px solid;
+}
+
 .row a, .row a:hover, .row a:active, .row a:visited{
   text-decoration: none;
 }
