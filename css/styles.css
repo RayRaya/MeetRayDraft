@@ -167,6 +167,10 @@ p {
 
 @media (max-width: 1045px) {
   p {
+    font-size: 1.5rem;
+  }
+
+  h5{
     font-size: 1.7rem;
   }
 
