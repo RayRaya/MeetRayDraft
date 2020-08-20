@@ -11,18 +11,35 @@ let linkArr = [
   'https://tywxd.csb.app/'
 ];
 
-let index = 0;
-for(card of allCards){
-  wordArray.push(card.innerText);
-  let text = card.innerText;
-  let shortenedChar = "";
-  text.length <= 100? shortenedChar = text: shortenedChar = text.substring(0, 90) + "...";
-  card.innerHTML = shortenedChar +
-    "<br /><div class = 'row'> <a onclick = 'clickReadMore(" + this.value + ")' value = '1' class = 'col-8' href = '#' />Read more <span style = 'font-size: 11px;'>&#9660;</span></a> <a class = 'col-4' href = "  + linkArr[index] +  " target = '_blank'>Link</a></div>";
-  index++;
+function makeUnit(){
+  let index = 0;
+  for(card of allCards){
+    wordArray.push(card.innerText);
+    let text = card.innerText;
+    let shortenedChar = "";
+    text.length <= 100? shortenedChar = text: shortenedChar = text.substring(0, 90) + "...";
+    card.innerHTML = shortenedChar + "<br /><div class = 'row center'> <a id = " + index + " class = 'card-options col-7' onclick = 'clickRead()'/>Read more <span style = 'font-size: 11px;'>&#9660;</span></a> <a class = 'col-5' href = "  + linkArr[index] +  " target = '_blank'>Link</a></div>";
+    index++;
+  }
 }
 
-function clickReadMore(index){
-  alert('its been called');
-  alert(index);
+
+function clickRead(){
+  let index = parseInt(event.srcElement.id);
+  let fullText = wordArray[index];
+  allCards[index].innerText = fullText;
+  let htmlVal = allCards[index].innerHTML;
+  allCards[index].innerHTML = htmlVal +
+  "<br /><div class = 'row center'> <a id = " + index + " class = 'card-options col-7' onclick = 'clickCollapse()'/>Collapse <span style = 'font-size: 11px;'>&#9650;</span></a> <a class = 'col-5' href = "  + linkArr[index] +  " target = '_blank'>Link</a></div>";
 }
+
+function clickCollapse(){
+  let index = parseInt(event.srcElement.id);
+  let text = wordArray[index];
+  let  shortenedChar = '';
+  text.length <= 100? shortenedChar = text: shortenedChar = text.substring(0, 90) + "...";
+  let htmlVal = allCards[index].innerHTML;
+  allCards[index].innerHTML = shortenedChar+ "<br /><div class = 'row center'> <a id = " + index + " class = 'card-options col-7' onclick = 'clickRead()'/> Read more <span style = 'font-size: 11px;'> &#9660; </span></a> <a class = 'col-5' href = "  + linkArr[index] +  " target = '_blank'>Link</a></div>";
+}
+
+makeUnit();
